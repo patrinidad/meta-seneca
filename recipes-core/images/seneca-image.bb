@@ -1,4 +1,4 @@
-SUMMARY = " This is a base image created as example for courses "
+SUMMARY = "This is a base image created as example for courses"
 inherit core-image
 
 IMAGE_LINGUAS = " "
