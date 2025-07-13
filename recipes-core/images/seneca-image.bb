@@ -8,6 +8,9 @@ LICENSE = "MIT"
 IMAGE_INSTALL:append = " \
     usbutils \
     usbinit \
+    i2c-tools \
+    libgpiod \
+    labtest \
     "
 
 IMAGE_FEATURES:append = " \
