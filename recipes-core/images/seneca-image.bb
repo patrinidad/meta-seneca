@@ -19,13 +19,19 @@ IMAGE_INSTALL:append = " \
     libgpiod \
     labtest \
     weston \
-	matchbox-keyboard \
-	cairo \
-	libgbm \
-	libdrm \
-	wayland \
-	mesa \
-	student-manager \
+    matchbox-keyboard \
+    cairo \
+    libgbm \
+    libdrm \
+    wayland \
+    mesa \
+    simple-library \
+    libiio \
+  	beagleplay-qwiic-accel \
+  	iio-accel-read \
+  	snake-accel \
+  	python3 \
+  	python3-curses \
     "
 
 IMAGE_FEATURES:append = " \
@@ -37,6 +43,3 @@ IMAGE_FEATURES:append = " \
 
 DISTRO_FEATURES:append = " usbgadget"
 MACHINE_FEATURES:append = " usbgadget usbhost"
-
-
-
