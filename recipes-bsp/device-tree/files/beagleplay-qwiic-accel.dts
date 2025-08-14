@@ -1,0 +1,17 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "ti,am625", "ti,am62";
+
+    fragment@0 {
+        target-path = "/bus@f0000/bus@4000000/i2c@4900000";  
+        __overlay__ {
+            status = "okay";
+            adxl345@53 {
+                compatible = "adi,adxl345";
+                reg = <0x53>;
+            };
+        };
+    };
+};
